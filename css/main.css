@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.imgleft {
+  float: left;
+  width: 3em;
+}
+
+.imgright{
+  float: right;
+  width: 3em;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #d05c2e;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
