@@ -1,15 +1,14 @@
 html {
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-ul {
-  list-style-type: none;
-  text-decoration: none;
+body {
+  font-family: "Merriweather", serif;
+  color: white;
 }
 
 .imgleft {
@@ -26,9 +25,11 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin: 0;
+  padding: 0.1em;
 }
 
 header {
+  overflow: hidden;
   background-color: #d05c2e;
 }
 
@@ -42,4 +43,36 @@ header {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background-color: #d05c2e;
+  overflow: hidden;
+  width: 100%;
+}
+
+ul a {
+  display: block;
+  text-decoration: none;
+  padding: 0.4em;
+  margin: 0;
+  color: white;
+  border: 1px solid #a63f38;
+}
+
+ul a:hover {
+  background-color: #a63f38;
+}
+
+ul li {
+  text-align: center;
+  list-style-type: none;
+  float: left;
+  width: 33.3333333%;
 }
